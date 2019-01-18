@@ -11,7 +11,7 @@
 	<body> 
 		<div class="container">
 			<h1>Bank Account</h1>
-			<h2>Register a new Account:</h2>
+			<h2 class="jumbotron" style="color: white">Register a new Account:</h2>
 			<form id="form-account">
 	            <div class="account">
 	              <label for="input-name">Account Name: </label>
@@ -28,6 +28,20 @@
 	            <div class="account">
 	              <button type="submit" class="btn btn-success">Confirm</button>
 	            </div>
+          </form>
+          <h2>Deposit or Withdraw Funds:</h2>
+          <form id="form-balance">
+            <div class="account">
+              <label for="input-deposit">Deposit: </label>
+              <input id="input-deposit"type="number"min="0"step="0.01" style="margin-left: 13px">
+            </div>
+            <div class="account">
+              <label for="input-withdraw">Withdraw: </label>
+              <input id="input-withdraw"type="number"min="0"step="0.01">
+            </div>
+            <div class="account">
+              <button type="submit" class="btn btn-success">Confirm</button>
+            </div>
           </form>
 
 
