@@ -41,6 +41,7 @@ $(function(){
 });
 
 //Create a constructor for object Task
+
 function Account(inputUserName,inputBalance){
   
   this.name = inputUserName;
