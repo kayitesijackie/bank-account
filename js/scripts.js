@@ -5,9 +5,6 @@ $(function(){
     event.preventDefault();
 
     var userName = $("#name").val();
-    var IdNumber = $("#id-number").val();
-    var email = $("#email").val();
-    var phoneNumber = $("#phone-number");
     var balance = parseFloat($("#balance").val());
     
     
@@ -15,7 +12,8 @@ $(function(){
     {
       balance = 0;
     }
-    var newAccount = new Account(userName,IdNumber,phoneNumber,balance);
+    var newAccount = new Account(userName,balance);
+    
     currentAccount = newAccount;
     newAccount.output();
   });
@@ -43,11 +41,9 @@ $(function(){
 });
 
 //Create a constructor for object Task
-function Account(inputUserName,inputIdNumber,inputEmail,inputPhoneNumber,inputBalance){
+function Account(inputUserName,inputBalance){
+  
   this.name = inputUserName;
-  this.id-number= inputIdNumber;
-  this.email = inputEmail;
-  this.phone-number = inputPhoneNumber;
   this.balance = inputBalance;
 }
 
